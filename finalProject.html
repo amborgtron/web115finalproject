@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 115 | Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to external JavaScript file -->
+    <script src="project.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/banner.png" alt="Meal Plan Banner">
+    </div>
+    <h1>Get Your Weekly Meal Plan!</h1>
+    <form id="mealForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="goal">Goal for the Week:</label><br>
+        <input type="text" id="goal" name="goal" required><br><br>
+        
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+    </form>
+
+    <button type="button" class="clearPlanner" onclick="clearPlanner()">Clear Planner</button>
+</body>
+</html>
